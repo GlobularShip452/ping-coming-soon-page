@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Ping coming soon page</title>
+  </head>
+  <body onload="document.form1.email.focus()">
+    <div class="container">
+      <img src="./assets/images/logo.svg" alt="Logo" class="logo" />
+      <div class="welcome">
+        <h1>We are launching <span>soon!</span></h1>
+        <p>Subscribe and get notified</p>
+      </div>
+      <!-- <div class="subscribe"> -->
+      <form class="subscribe" action="#" name="form1">
+        <input
+          name="email"
+          id=""
+          type="email"
+          class="email"
+          placeholder="Your email address..."
+        />
+        <input
+          class="cta"
+          type="submit"
+          value="Notify Me"
+          name="submit"
+          onclick="ValidateEmail(document.form1.email)"
+        />
+      </form>
+      <!-- </div> -->
+      <img
+        src="./assets/images/illustration-dashboard.png"
+        alt="Hero Illustration"
+        class="illustration"
+      />
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <footer>
+        <p>&copy; Made By Yoran Essers. Challenge by Frontend Mentor.</p>
+      </footer>
+      <div id="wrong"></div>
+    </div>
+
+    <script src="./assets/js/validate.js"></script>
+  </body>
+</html>
